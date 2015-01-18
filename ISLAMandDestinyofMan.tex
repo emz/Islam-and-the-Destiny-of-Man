@@ -1,5 +1,5 @@
-\documentclass[10pt, twoside]{book}
-\usepackage[paperwidth=6in, paperheight=9in, top=1in, bottom=0.9in, outer=0.9in, inner=0.7in]{geometry}
+\documentclass[10pt, twoside,openright]{book}
+\usepackage[paperwidth=6in, paperheight=9in, top=1in, bottom=0.7in, outer=0.7in, inner=0.7in]{geometry}
 
 \usepackage{microtype}
 \usepackage[UKenglish]{babel}
@@ -17,14 +17,24 @@
 	pdftitle={Islam and The Destiny of Man}}
 
 \setlength{\parskip}{-0.4cm plus2mm}
+
 \usepackage{hyphenat}
+
+\usepackage{fancyhdr}
+
+\usepackage{titlesec}
+%\titleformat{<command>}[<shape>]{<format>}{<label>}{<sep>}{<before-code>}[<after-code>]
+\titleformat{\chapter}[display]{\Huge}{\centering\large\emph{Chapter \thechapter\\ \vspace{4mm}}}{0pt}{\centering}
+\titleformat{\part}[display]{\Huge}{\centering\LARGE Part \thepart\\ \vspace{10mm}}{0pt}{\centering}
+
+\titlespacing{\chapter}{0pt}{15mm}{12mm}
 
 \renewcommand*\rmdefault{ppl}
 
 \usepackage{arabtex}
 
-\title{\LARGE \textbf{\textsc{Islam and the Destiny of Man}}}
-\author{\Large Charles Le Gai Eaton}
+\title{\Huge \textbf{\textsc{ISLAM}\\ \Large AND THE DESTINY OF MAN}}
+\author{\large Charles Le Gai Eaton}
 \date{ }
 
 \begin{document}
@@ -38,8 +48,22 @@
 \frontmatter
 \pagenumbering{roman}
 
-\chapter{Introduction}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[CE]{\normalsize\emph{Islam and the Destiny of Man}}
+\fancyhead[RO,LE]{\normalsize\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\headsep}{3pt}
 
+\renewcommand\footnoterule{\rule{0pt}{0pt}}
+\setlength{\skip\footins}{5mm}
+
+%\renewcommand{\chaptermark}[1]{%
+%\markboth{#1}{}}
+
+\chapter{INTRODUCTION}
+\fancyhead[CO]{\normalsize\em Introduction}
 Religion is a different matter.\\
 
 Other subjects may lend themselves, in varying degree, to objective study, and in some cases personal commitment serves only to distort what should be a clear and balanced picture. Religion is a different matter because here objectivity only skims the surface, missing the essential. The keys to understanding lie within the observer's own being and experience, and without these keys no door will open. This is particularly true of Islam, a religion which treats the distinction between belief and unbelief as the most fundamental of all possible distinctions, comparable on the physical level to that between the sighted and the blind. Believing and understanding complement and support one another. We do not seek for an adequate description of a landscape from a blind man, even if he has made a scientific study of its topography and has analysed the nature of its rocks and vegetation. In Islam every aspect of human life, every thought and every action, is shaped and evaluated in the light of the basic article of faith. Remove this linchpin and the whole structure falls apart.\\
@@ -88,9 +112,10 @@ In what follows I hope, God willing, to show what it means to be a Muslim, and t
 \mainmatter
 \pagenumbering{arabic}
 
-\part{An Approach to the Faith}
+\part{AN APPROACH TO THE FAITH}
 
-\chapter{Islam and Europe}
+\chapter{ISLAM AND EUROPE}
+\fancyhead[CO]{\normalsize\em Islam and Europe}
 
 With the fading away of imperial power, which had made it possible for the West to despise other cultures, interest in Islam has revived recently, and the economic influence of oil\hyp{}rich Muslim states has provided, for the first time in 250 years, a practical motive for seeking to understand the Muslim world. There is no lack of information available, and library shelves are heavy with books on Islam; but whether this spate of information has provided the keys to understanding --- and to the empathy without which understanding can only be superficial --- is another question. In any case, those of us who see a need to build bridges across the frontier are never satisfied. An affirmation is nothing if the signal which carries it is weak or distorted, and although it may be that all such signals, by their very nature, lack strength and clarity, the attempt must be made, repeatedly, to find the right words and the most effective means of communication. \\
 
@@ -251,7 +276,8 @@ Mustapha is 'the adventurer par excellence. He expects life to have something of
 
 This portrait, despite certain distortions of perspective, is rich in implications and may perhaps indicate more clearly than any amount of theorizing the gulf which separates those whose minds have been formed in an Islamic climate from the 'common man' of the Occident. The social and educational strata of contemporary Muslim society are sharply separated, and the gulf must be bridged on more than one level if understanding is ever to be achieved. \\
 
-\chapter{Continuity and Contrast}
+\chapter{CONTINUITY AND CONTRAST}
+\fancyhead[CO]{\normalsize\em Continuity and Contrast}
 
 An ancient tradition tells us (and God knows best the truth of it) that Adam, the first man and the 
 first prophet, was commanded to make a great journey. Having fallen from Paradise to the dusty earth 
@@ -984,7 +1010,8 @@ in an integrated pattern, and the principle of Unity is reflected in the single 
 in himself and conforming to the human norm, as it is in the community united in prayer and in 
 obedience to the Law. \\
 
-\chapter{Truth and Mercy}
+\chapter{TRUTH AND MERCY}
+\fancyhead[CO]{\normalsize\em Truth and Mercy}
 
 To those who find it difficult to believe in any deity, let alone a multitude of gods, and who think 
 of idolatry as a primitive cult --- as remote from rational people as cannibalism --- the Credo of Islam, 
@@ -1572,9 +1599,9 @@ lights, the Lord of lords, encompassing all. Glory to Him whom nothing resembles
 All\hyp{}Seer.' \\
 
 
-\part{The Making of the Faith}
-\chapter{The World of the Book}
-
+\part{THE MAKING OF THE FAITH}
+\chapter{THE WORLD OF THE BOOK}
+\fancyhead[CO]{\normalsize\em The World of the Book}
 
 There is ground to be cleared before we can have any hope of coming close to the Qur'an; thorny 
 ground, all the more difficult to negotiate because the thorn trees are not immediately visible. In 
@@ -2391,7 +2418,8 @@ nothing to fear. \\
 At journey's end is the greeting: '\emph{O thou soul at peace --- Return unto thy Lord, content in His 
 contentment}' (Q.89.27-28): '\emph{As for such, He hath inscribed faith upon their hearts and strengthened them with a Spirit from Himself, and He will bring them into Gardens beneath which flow rivers [of grace], therein to abide. Allah is content with them, and they are content with Him}' (Q.58.22). \\
 
-\chapter{The Messenger of God}
+\chapter{THE MESSENGER OF GOD}
+\fancyhead[CO]{\normalsize\em The Messenger of God}
 
 The encounter with the story of Muhammad's life, like the encounter with the Qur'an, requires a shift 
 in perspective both on the part of the Christian and of the secularist, as also on the part of all 
@@ -2951,8 +2979,8 @@ Not for the first time or the last --- the people were being tested. They held f
 would emigrate with the Prophet to the city in which Islam was to become a world religion. They were 
 the nucleus, and it was upon their faith that everything depended. \\
 
-\chapter{The City of the Prophet}
-
+\chapter{THE CITY OF THE PROPHET}
+\fancyhead[CO]{\normalsize\em The City of the Prophet}
 
 Particularly galling to Quraysh was Muhammad's practice of going among the pilgrims in the annual 
 season of pilgrimage and preaching his message. It was easy to guess what he must be saying about 
@@ -3605,7 +3633,8 @@ gone to that which is better for him than this world? But I weep for the news of
 cut off from us. \\
 
 
-\chapter{The Successors}
+\chapter{THE SUCCESSORS}
+\fancyhead[CO]{\normalsize\em The Successors}
 
 It is said that the Arabs Will follow a man they love and admire to the ends of the earth; they will not stir for a lesser man, and their interest in abstract ideas is limited. The history of the Arabs is therefore a story of individuals --- one might perhaps describe it as a 'Shakespearean' history --- with high peaks and deep troughs. The same might be said of the inward history of Islam, with its vertiginous ups and downs, its great 'renewers of the religion', great saints, great scholars and great 'warriors in the path of Allah', but also with its bigots and hypocrites. \\
 
@@ -3716,7 +3745,8 @@ So died the last of the Rashidun, the 'rightly\hyp{}guided' caliphs of Islam, ju
 The fact that three of them died at the hands of their fellow\hyp{}Muslims has introduced into the fabric of Islam a sadness which still casts its shadow over the joy inherent in lucid religious faith. Sometimes this sadness has given rise to anger, leading to further killing, and to acts of violence against a world which treated such men so cruelly. Ultimate Truth --- the truth of the Shahadah --- cannot be neatly fitted into the terrestrial dimensions and therefore finds expression in painful contradictions and through the interplay of opposites. If Truth is the principal business of religion --- but for which all Faiths would be mere sentimentality and wishful thinking --- then religion is inevitably stretched out upon the rack of contradiction, and only the unbeliever, in his little time and little place, is at peace in this world. \\
 
 
-\chapter{The Way of the World}
+\chapter{THE WAY OF THE WORLD}
+\fancyhead[CO]{\normalsize\em The Way of the World}
 
 Mu'awiyah was wounded by the Kharijite sent to assassinate him, but he recovered from his wound. Now 
 this Umayyad, the son of Abu Sufyan and Hind, was Caliph and there was no one to question his right. 
@@ -4378,9 +4408,9 @@ really only two questions to be asked. Did Islam survive? Did it spread across t
 to both questions is in the affirmative. After that the history books may be closed. \\
 
 
-\part{The Fruits of the Faith}
-\chapter{The Rule of Law}
-
+\part{THE FRUITS OF THE FAITH}
+\chapter{THE RULE OF LAW}
+\fancyhead[CO]{\normalsize\em The Rule of Law}
 
 During the period of decolonization in the 1950s and early 1960s the question as to which territories 
 were --- or were not --- fit for self-government was seriously debated. No one raised the more 
@@ -5079,8 +5109,8 @@ lived out this ideal, seeing no reason to change it for another, for a thousand 
 lesson and a warning for today's world. \\
 
 
-\chapter{The Human Paradox}
-
+\chapter{THE HUMAN PARADOX}
+\fancyhead[CO]{\normalsize\em The Human Paradox}
 
 It is time to speak again of Adam, primordial or archetypal Man; and to speak also of Eve, without 
 whom the first creation would have been imperfect and incomplete. Christians have long debated as to 
@@ -5928,7 +5958,8 @@ its source and made of their own human substance an open door between what is ab
 beneath; for these are the supreme artists. \\
 
 
-\chapter{Art, Environment and Mysticism}
+\chapter{ART, ENVIRONMENT AND MYSTICISM}
+\fancyhead[CO]{\normalsize\em Art, Environment and Mysticism}
 
 It is sometimes said that there is no such thing as 'Islamic Culture', and if we limit the term 
 'culture' to its modern connotation this is true enough. There are no secular, profane arts in Islam 
@@ -6675,7 +6706,8 @@ remains. Man, however, goes on digging, in the name of God. And the mountain van
 there'\footnote{\emph{Stations of Wisdom}, Frithjof Schuon (London: John Murray, 1961), p.157.}. \\
 
 
-\chapter{Other Dimensions}
+\chapter{OTHER DIMENSIONS}
+\fancyhead[CO]{\normalsize\em Other Dimensions}
 
 It is not only the mystics who are concerned with the problem of making the 'abstract' concrete, that 
 is to say, with extending the sense of reality which every sane man and woman possesses to include 
